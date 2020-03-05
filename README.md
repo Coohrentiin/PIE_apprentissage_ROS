@@ -1,5 +1,5 @@
 # Talker et subscriber en ROS
-
+# dernière MàJ: 5/03/20
 L'objectif de ce git est de partager les ressources pour réaliser un talker/subcriber avec ROS. C'est à dire réaliser deux noeuds qui vont communiquer ensemble, le premier qui envoi une information, le soncond qui la reçoit et l'affiche. 
 
 
