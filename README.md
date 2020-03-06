@@ -1,5 +1,5 @@
 # Talker et subscriber en ROS
-# dernière MàJ: 5/03/20
+# dernière MàJ: 6/03/20
 L'objectif de ce git est de partager les ressources pour réaliser un talker/subcriber avec ROS. C'est à dire réaliser deux noeuds qui vont communiquer ensemble, le premier qui envoi une information, le soncond qui la reçoit et l'affiche. 
 
 
@@ -25,7 +25,6 @@ suivre le tuto: http://wiki.ros.org/ROS/Tutorials/ExaminingPublisherSubscriber
 ## Aller plus loin.
 
 Maintenant que l'on sait envoyer une information d'un code à l'autre, une idée serait d'envoyer d'un noeud un angle. Puis le second noeud utilise cet angle pour trouver le nombre de tours à imposer aux deux roues du robot en commande linéaire pour efectuer la rotation par exemple. 
-Pour les STIC/IA cela resemble beaucoup au TP1 de AUT202.
 
 Dans le dossier src vous trouverez une petite fonction qui permet à partir d'un angle de trouver ne nombre n de tours à effectuer avec les roues pour faire une rotation de l'angle. 
 Point de vue calcul:
@@ -33,4 +32,4 @@ Point de vue calcul:
 - la distance couverte par les roues en $n$ tours est de $d_roues=2\pi*R $ 
 or l'on veut que $d=d_roue$ ce qui fournie: $n=l*angle/(4*\pi*R)$ comme il apparait dans le code.
 
-Maintenant il faut integrer cette fonction dans le talk/listen.
+Cette features a été ajouté dans la branch ajout_fonction_angle
